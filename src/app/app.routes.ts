@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '',
+    redirectTo: 'auth',
     pathMatch: 'full',
   },
   {
@@ -12,14 +12,16 @@ export const routes: Routes = [
   },
   {
     path: 'offers',
-    loadComponent: () => import('./offers/offers.page').then( m => m.OffersPage)
+    loadComponent: () =>
+      import('./offers/offers.page').then((m) => m.OffersPage),
   },
   {
     path: 'places',
-    loadComponent: () => import('./places/places.page').then( m => m.PlacesPage)
+    loadComponent: () =>
+      import('./places/places.page').then((m) => m.PlacesPage),
   },
   {
     path: 'tabs',
-    loadComponent: () => import('./tabs/tabs.page').then( m => m.TabsPage)
+    loadComponent: () => import('./tabs/tabs.page').then((m) => m.TabsPage),
   },
 ];
