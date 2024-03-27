@@ -33,9 +33,4 @@ import {
 })
 export class AppComponent {
   constructor() {}
-
-  onLogout() {
-    this.authService.logout();
-    this.router.navigateByUrl('/auth');
-  }
 }
